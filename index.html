@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Infinite Scroller</title>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="src/infinite-scroller.js"></script>
+    <link href="src/infinite-scroller.css" rel="stylesheet"/>
+</head>
+<body>
+<h1>jQuery Infinite Scroller</h1>
+<p><span>See </span><a href="https://github.com/chriswatts91/jquery-infinite-scroller">readme on Github</a><span> for usage instructions.</span>
+</p>
+<p><span>See </span><a href="https://github.com/chriswatts91/jquery-infinite-scroller/tree/master/demo">demos
+    directory</a><span> in repo for the code behind these demos.</span></p>
+
+<h2>Demos</h2>
+
+<article>
+    <h3>Simple slider</h3>
+    <section id="example1">
+        <ul>
+            <li><img src="http://placehold.it/350x300/ff0000?text=1"></li>
+            <li><img src="http://placehold.it/350x300/00ff00?text=2"></li>
+            <li><img src="http://placehold.it/350x300/0000ff?text=3"></li>
+            <li><img src="http://placehold.it/350x300/ffff00?text=4"></li>
+            <li><img src="http://placehold.it/350x300/00ffff?text=5"></li>
+            <li><img src="http://placehold.it/350x300?text=6"></li>
+        </ul>
+    </section>
+    <pre>
+        $("#example1").infiniteScroller();
+    </pre>
+</article>
+
+<article>
+    <h3>Scrolling right without hover</h3>
+    <section id="example2">
+        <ul>
+            <li><img src="http://placehold.it/350x300/ff0000?text=1"></li>
+            <li><img src="http://placehold.it/350x300/00ff00?text=2"></li>
+            <li><img src="http://placehold.it/350x300/0000ff?text=3"></li>
+            <li><img src="http://placehold.it/350x300/ffff00?text=4"></li>
+            <li><img src="http://placehold.it/350x300/00ffff?text=5"></li>
+            <li><img src="http://placehold.it/350x300?text=6"></li>
+        </ul>
+    </section>
+    <pre>
+        $( "#example2" ).infiniteScroller( {
+            scrollOnMouseOver: false,
+            direction: "right"
+        } );
+    </pre>
+</article>
+
+<article>
+    <h3>Maintain speed on mouseout</h3>
+    <section id="example3">
+        <ul>
+            <li><img src="http://placehold.it/350x300/ff0000?text=1"></li>
+            <li><img src="http://placehold.it/350x300/00ff00?text=2"></li>
+            <li><img src="http://placehold.it/350x300/0000ff?text=3"></li>
+            <li><img src="http://placehold.it/350x300/ffff00?text=4"></li>
+            <li><img src="http://placehold.it/350x300/00ffff?text=5"></li>
+            <li><img src="http://placehold.it/350x300?text=6"></li>
+        </ul>
+    </section>
+    <pre>
+        $( "#example3" ).infiniteScroller( {
+            resetOnMouseOut: false,
+            maxSpeed: 50
+        } );
+    </pre>
+</article>
+
+<script>
+    $(window).on("load", function() {
+        $( "#example1" ).infiniteScroller();
+
+        $( "#example2" ).infiniteScroller( {
+            scrollOnMouseOver: false,
+            direction: "right"
+        } );
+
+        $( "#example3" ).infiniteScroller( {
+            resetOnMouseOut: false,
+            maxSpeed: 50
+        } );
+    } );
+</script>
+</body>
+</html>

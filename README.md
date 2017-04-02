@@ -2,6 +2,10 @@
 
 A jQuery plugin that infinitely scrolls content based on mouse position
 
+### Demo 
+
+[http://cawserve.com/jquery-infinite-scroller](http://cawserve.com/jquery-infinite-scroller)
+
 ### Install
 
 This package can be installed with:
