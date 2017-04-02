@@ -1,4 +1,4 @@
-# jQuery Infinite Scroller
+# jQuery Infinite Scroller [![Build Status](https://travis-ci.org/chriswatts91/jquery-infinite-scroller.svg?branch=master)](https://travis-ci.org/chriswatts91/jquery-infinite-scroller)
 
 A jQuery plugin that infinitely scrolls content based on mouse position
 
