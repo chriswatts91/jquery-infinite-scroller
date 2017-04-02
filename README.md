@@ -2,7 +2,20 @@
 
 A jQuery plugin that infinitely scrolls content based on mouse position
 
-## Usage
+### Install
+
+This package can be installed with:
+
+```sh
+# Bower
+bower install --save jquery-infinite-scroller
+
+# NPM
+npm install jquery-infinite-scroller
+```
+Or download the [latest release](https://github.com/chriswatts91/jquery-infinite-scroller/releases).
+
+### Usage
 
 Here is an example of quick usage:
 
@@ -10,7 +23,7 @@ Here is an example of quick usage:
 $(".scroller").infiniteScroller();
 ```
 
-### Parameters:
+### Parameters
 
 Name | Description | Default 
 ---- | ----------- | -------
