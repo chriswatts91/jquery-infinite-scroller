@@ -1,0 +1,26 @@
+{
+  "name": "jquery-infinite-scroller",
+  "license": "MIT",
+  "authors": [
+    "Chris Watts <chris@cawserve.com>"
+  ],
+  "description": "A jQuery plugin that infinitely scrolls content based on mouse position",
+  "homepage": "http://cawserve.com/jquery-infinite-scroller",
+  "keywords": [
+    "jquery-plugin",
+    "jquery",
+    "infinite-scroller"
+  ],
+  "main": [
+    "src/infinite-scroller.js",
+    "src/infinite-scroller.css"
+  ],
+  "dependencies": {
+    "jquery": "1"
+  },
+  "ignore": [
+    "npm-debug.log",
+    "bower_components",
+    "node_modules"
+  ]
+}

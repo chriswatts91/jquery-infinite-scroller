@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Infinite Scroller</title>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../src/infinite-scroller.js"></script>
+    <link href="../src/infinite-scroller.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="scroller">
+    <ul>
+        <li><img
+                src="http://imgsv.imaging.nikon.com/lineup/lens/zoom/normalzoom/af-s_dx_18-140mmf_35-56g_ed_vr/img/sample/sample1_l.jpg">
+        </li>
+        <li><img
+                src="http://imgsv.imaging.nikon.com/lineup/lens/zoom/normalzoom/af-s_dx_18-140mmf_35-56g_ed_vr/img/sample/sample1_l.jpg">
+        </li>
+        <li><img
+                src="http://imgsv.imaging.nikon.com/lineup/lens/zoom/normalzoom/af-s_dx_18-140mmf_35-56g_ed_vr/img/sample/sample1_l.jpg">
+        </li>
+    </ul>
+</div>
+<script>
+  $(function () {
+    $(".scroller").infiniteScroller();
+  });
+</script>
+</body>
+</html>

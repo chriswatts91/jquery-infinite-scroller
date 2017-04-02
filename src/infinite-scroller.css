@@ -1,0 +1,27 @@
+.slide-wrap {
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+.slide-wrap .slide-data {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.slide-wrap .slide-data ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.slide-wrap .slide-data ul li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+}
