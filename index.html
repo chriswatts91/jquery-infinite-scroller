@@ -17,7 +17,7 @@
 
 <article>
     <h3>Simple slider</h3>
-    <section id="example1">
+    <section id="example1" class="infinite-scroller">
         <ul>
             <li><img src="http://placehold.it/350x300/ff0000?text=1"></li>
             <li><img src="http://placehold.it/350x300/00ff00?text=2"></li>
@@ -34,7 +34,7 @@
 
 <article>
     <h3>Scrolling right without hover</h3>
-    <section id="example2">
+    <section id="example2" class="infinite-scroller">
         <ul>
             <li><img src="http://placehold.it/350x300/ff0000?text=1"></li>
             <li><img src="http://placehold.it/350x300/00ff00?text=2"></li>
@@ -54,7 +54,7 @@
 
 <article>
     <h3>Maintain speed on mouseout</h3>
-    <section id="example3">
+    <section id="example3" class="infinite-scroller">
         <ul>
             <li><img src="http://placehold.it/350x300/ff0000?text=1"></li>
             <li><img src="http://placehold.it/350x300/00ff00?text=2"></li>
@@ -72,6 +72,27 @@
     </pre>
 </article>
 
+<article>
+    <h3>Maintain speed on mouseout</h3>
+    <section id="example4" class="infinite-scroller">
+        <ul>
+            <li><img src="http://placehold.it/350x300/ff0000?text=1"></li>
+            <li><img src="http://placehold.it/350x300/00ff00?text=2"></li>
+            <li><img src="http://placehold.it/350x300/0000ff?text=3"></li>
+            <li><img src="http://placehold.it/350x300/ffff00?text=4"></li>
+            <li><img src="http://placehold.it/350x300/00ffff?text=5"></li>
+            <li><img src="http://placehold.it/350x300?text=6"></li>
+        </ul>
+    </section>
+    <pre>
+        $( "#example4" ).infiniteScroller( {
+            resetOnMouseOut: true,
+            maxSpeed: 50,
+            speed: 0
+        } );
+    </pre>
+</article>
+
 <script>
     $(window).on("load", function() {
         $( "#example1" ).infiniteScroller();
@@ -84,6 +105,12 @@
         $( "#example3" ).infiniteScroller( {
             resetOnMouseOut: false,
             maxSpeed: 50
+        } );
+
+        $( "#example4" ).infiniteScroller( {
+            resetOnMouseOut: true,
+            maxSpeed: 50,
+            speed: 0
         } );
     } );
 </script>
