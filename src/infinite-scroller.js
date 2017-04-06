@@ -75,7 +75,7 @@
                 this.scrollOnMouseOver( $data );
             }
 
-            $scroller.css("visibility", "visible");
+            $scroller.css( "visibility", "visible" );
         },
         tweenToNewSpeed: function( newSpeed, duration ) {
             if ( duration === undefined ) {
