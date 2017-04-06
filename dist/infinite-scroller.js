@@ -1,5 +1,5 @@
 /*
- *  jquery-infinite-scroller - v1.0.0
+ *  jquery-infinite-scroller - v1.0.2
  *  A jQuery plugin that infinitely scrolls content based on mouse position
  *  http://cawserve.com/jquery-infinite-scroller
  *
@@ -37,10 +37,10 @@
             var $slideWrap = $scroller.find( ".slide-wrap" );
             var scrollerContent = $data.children( "ul" );
             var controller = this.controller;
-            var speed = settings.speed;
             if ( settings.direction === "right" ) {
-                speed = settings.speed * -1;
+                settings.speed = settings.speed * -1;
             }
+            var speed = settings.speed;
             $scroller.addClass( "slide-pane" );
 
             // Set height of the container

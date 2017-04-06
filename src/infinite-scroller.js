@@ -29,10 +29,10 @@
             var $slideWrap = $scroller.find( ".slide-wrap" );
             var scrollerContent = $data.children( "ul" );
             var controller = this.controller;
-            var speed = settings.speed;
             if ( settings.direction === "right" ) {
-                speed = settings.speed * -1;
+                settings.speed = settings.speed * -1;
             }
+            var speed = settings.speed;
             $scroller.addClass( "slide-pane" );
 
             // Set height of the container
